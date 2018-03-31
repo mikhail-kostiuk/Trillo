@@ -20,6 +20,17 @@
 }
 
 .hotel-view {
-  height: 80rem;
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: 1px solid var(--color-grey-light-2);
+}
+
+.user-reviews {
+  background-color: greenyellow;
   flex: 1;
 }
