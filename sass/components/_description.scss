@@ -4,6 +4,11 @@
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  @media only screen and (max-width: $breakpoint-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .paragraph:not(:last-of-type) {
@@ -57,6 +62,7 @@
   }
 
   &__friends {
+    display: flex;
   }
 
   &__photo {
@@ -67,7 +73,7 @@
     border: 3px solid #fff;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
