@@ -7,6 +7,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: $breakpoint-smallest) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  }
 }
 
 .logo {
@@ -21,6 +27,11 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $breakpoint-smallest) {
+    order: 1;
+    flex: 0 0 100%;
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -32,10 +43,18 @@
     transition: all 0.2s;
     margin-right: -3.5rem;
 
+    @media only screen and (max-width: $breakpoint-smallest) {
+      margin-left: -1.25rem;
+    }
+
     &:focus {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3);
+
+      @media only screen and (max-width: $breakpoint-smallest) {
+        margin-left: -1.25rem;
+      }
     }
 
     &::-webkit-input-placeholder {
